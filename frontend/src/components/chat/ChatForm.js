@@ -25,6 +25,7 @@ export default function ChatForm(props) {
     props.handleFormSubmit(message);
     setMessage("");
   };
+  
 
   return (
     <div ref={scrollRef}>

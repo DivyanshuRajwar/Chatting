@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(VerifyToken);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 9000;
 
 app.use("/api/room", chatRoomRoutes);
 app.use("/api/message", chatMessageRoutes);
@@ -32,7 +32,7 @@ const server = app.listen(PORT, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3001",
     credentials: true,
   },
 });
