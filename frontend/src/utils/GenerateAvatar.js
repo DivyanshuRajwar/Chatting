@@ -24,13 +24,22 @@
 //   }
 //   return data;
 // };
-import img1 from "./download.jpeg";
-import img2 from "./download2.jpeg";
-
 export const generateAvatar = () => {
-  const data = [];
-
-  data.push(img1)
-  data.push(img2)
-  return data;
+  return [
+    "/avatars/avatar1.jpeg",
+    "/avatars/avatar2.jpeg"
+  ];
 };
+
+// export const generateAvatar = () => {
+//   const data = [];
+
+//   // You want to push 6 avatars just like before
+//   for (let i = 0; i < 6; i++) {
+//     // Randomly choose img1 or img2
+//     const randomImage = Math.random() < 0.5 ? img1 : img2;
+//     data.push(randomImage);
+//   }
+
+//   return data;
+// };
